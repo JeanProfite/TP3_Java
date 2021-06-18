@@ -64,7 +64,7 @@ public class Convertisseur extends JFrame implements ActionListener{ // créatio
         //_________________________Sous fenetre Centre_______________________________
         //Contient un label
 
-        lConvert.setText("Taux de conversion: 1 $US = "+taux+"€");
+        lConvert.setText("Taux de conversion: 1 $US = "+taux+" €");
         lConvert.setHorizontalAlignment(JLabel.CENTER); // positionnement au centre de lConvert
         pCentre.add(lConvert,BorderLayout.CENTER); // ajout du label lConvert
 
