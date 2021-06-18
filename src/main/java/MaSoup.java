@@ -23,7 +23,7 @@ public class MaSoup { // création de la classe MaSoup
                 i++;
             }
         }
-        catch (IOException e){ // on regroupe toute les exceptions
+        catch (IOException e){ // on regroupe toutes les exceptions
             e.printStackTrace(); // affiche l'erreur et l'emplacement
         }
         return taux[index];

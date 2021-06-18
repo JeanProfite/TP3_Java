@@ -8,7 +8,8 @@ public class Convertisseur extends JFrame implements ActionListener{ // créatio
     public JButton bp; // initialisation du bouton bp
     public JLabel lDollars=new JLabel(""), lConvert=new JLabel(""), lMonnaie=new JLabel("");
     public boolean isNumeric = false; //initialisation d'une variable boolean is numeric et attribution a "false"
-    public static double taux=1.35; // initialisation d'une variable static double taux et attribution de 1,35
+    public static double taux=MaSoup.getTaux(0); // initialisation d'une variable static double taux et attribution de 1,35
+    public static String currency=CurrencyFormatter.USD;
     protected JComboBox liste = new JComboBox();
 
     public Convertisseur() { // création du constructeur
@@ -47,7 +48,10 @@ public class Convertisseur extends JFrame implements ActionListener{ // créatio
 
         //__________________________Menu déroulant séléction devise_______________________
 
-        liste.setPreferredSize(new Dimension(100,20)); // dimension de la liste
+        JPanel pMonnaie = new JPanel(new BorderLayout()); // création d'un affichage pMonnaie
+        lMonnaie.setText("Monnaie");
+        lMonnaie.setHorizontalAlignment(JLabel.CENTER); // Positionnement d'un text lEuro sur centre
+        liste.setPreferredSize(new Dimension(100,18)); // dimension de la liste
         liste.addItem("Dollar"); // ajout de l'item Dollar dans la liste
         liste.addItem("Yen"); // ajout de l'item Yen dans la liste
         liste.addItem("Livre"); // ajout de l'item Livre dans la liste

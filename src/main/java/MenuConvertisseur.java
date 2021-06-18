@@ -29,7 +29,7 @@ public class MenuConvertisseur extends JMenuBar { // Création de la classe Menu
         aPropos.addActionListener(new ActionListener() { // Appliquer une action lors de l'appui du bouton
             public void actionPerformed(ActionEvent v) { //Message pop up "A propos"
                 JOptionPane.showMessageDialog(new JFrame(), "Cette application vous permet de convertir des euros en dollars. \nAvec la possibilité de changer le taux de change.", "A propos", JOptionPane.INFORMATION_MESSAGE);
-                // Affichage d'une fentre avec le texte
+                // Affichage d'une fenetre avec le texte
             }
     });
         configurer.addActionListener(new ActionListener() { // Appliquer une action lors de l'appui du bouton

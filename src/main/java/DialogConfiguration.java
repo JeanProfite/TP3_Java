@@ -38,7 +38,7 @@ public class DialogConfiguration extends JDialog implements ActionListener{ // c
                 dispose(); // Ferme la fenetre
             }
             catch(Exception t) {JOptionPane.showMessageDialog(new JFrame(), "Entrez un nombre !!!", "WARNING", JOptionPane.WARNING_MESSAGE);}
-            // attraper toute les exceptions pour les cas d'erreur
+            // attraper toutes les exceptions pour les cas d'erreur
         }
     }
 }
