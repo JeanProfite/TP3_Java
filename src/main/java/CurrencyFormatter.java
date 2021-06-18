@@ -4,6 +4,8 @@ public class CurrencyFormatter { // création de la classe CurrencyFormatter
     public static final String EURO = ""+ (char) (8364); // initialisation de la valeur string euro
     public static final String USD = "$US"; // initialisation de la valeur string usd
     public static final String POUNDS = "£"; // initialisation de la valeur string pounds
+    public static final String MAD = "Dirham";
+    public static final String YEN = "¥";
 
     public static String formatte(double v, int nbdec, String monnaieSymb){ // création de la variable string formatte
         NumberFormat fmt = NumberFormat.getInstance(); // fmt prend l'instance de NumberFormat
