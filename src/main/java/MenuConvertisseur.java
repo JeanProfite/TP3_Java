@@ -1,5 +1,6 @@
-import javax.swing.*; // import des librairies
-import java.awt.event.*; // import des librairies
+// import des librairies
+import javax.swing.*;
+import java.awt.event.*;
 
 public class MenuConvertisseur extends JMenuBar { // Création de la classe MenuConvertisseur
 
@@ -20,19 +21,19 @@ public class MenuConvertisseur extends JMenuBar { // Création de la classe Menu
         add(Aide);// ajout du menu Aide dans la bar de menu
 
         //____________Actions des bouttons________________
-        quitter.addActionListener(new ActionListener() {  // Appliquer une action lors de l'appui du bouton
+        quitter.addActionListener(new ActionListener() {  // Appliquer une action lors de l'appui du bouton de fermeture de la fenêtre
             public void actionPerformed(ActionEvent v) {
                 System.exit(0);
             } //Fermeture de la fennetre
         });
 
-        aPropos.addActionListener(new ActionListener() { // Appliquer une action lors de l'appui du bouton
+        aPropos.addActionListener(new ActionListener() { // Appliquer une action lors de l'appui sur a propos
             public void actionPerformed(ActionEvent v) { //Message pop up "A propos"
                 JOptionPane.showMessageDialog(new JFrame(), "Cette application vous permet de convertir des euros en dollars. \nAvec la possibilité de changer le taux de change.", "A propos", JOptionPane.INFORMATION_MESSAGE);
-                // Affichage d'une fenetre avec le texte
+                // Affichage d'une fenetre pop-up avec le texte
             }
     });
-        configurer.addActionListener(new ActionListener() { // Appliquer une action lors de l'appui du bouton
+        configurer.addActionListener(new ActionListener() { // Appliquer une action lors de l'appui sur "configurer"
             public void actionPerformed(ActionEvent v) {new DialogConfiguration();} //Appel de la methode DialogConfiguration()
     });
     }

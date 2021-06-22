@@ -7,7 +7,7 @@ public class CurrencyFormatter { // création de la classe CurrencyFormatter
     public static final String MAD = "Dirham";
     public static final String YEN = "¥";
 
-    public static String formatte(double v, int nbdec, String monnaieSymb){ // création de la variable string formatte
+    public static String formatte(double v, int nbdec, String monnaieSymb){ // création de la methode formatte
         NumberFormat fmt = NumberFormat.getInstance(); // fmt prend l'instance de NumberFormat
         fmt.setMaximumFractionDigits(nbdec); // nbdec est le nombre maximal de chiffre après la virgule
             fmt.setMinimumFractionDigits(nbdec); // nbdec est le nombre minimal de chiffre après la virgule
